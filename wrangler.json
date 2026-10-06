@@ -1,0 +1,15 @@
+{
+
+  "$schema": "./node_modules/wrangler/config-schema.json",
+
+  "name": "mila",
+
+  "compatibility_date": "2026-10-06",
+
+  "assets": {
+
+    "directory": "."
+
+  }
+
+}
