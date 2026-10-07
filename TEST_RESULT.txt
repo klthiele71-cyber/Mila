@@ -1,0 +1,38 @@
+PASS  test_security.test_high_action_with_approval_is_allowed
+PASS  test_security.test_high_action_without_approval_is_blocked
+PASS  test_security.test_negative_or_empty_approval_is_blocked
+PASS  test_security.test_old_or_wrong_action_approval_is_blocked
+PASS  test_task_context.test_missing_information_is_unique
+PASS  test_task_context.test_task_and_context
+PASS  test_task_context.test_task_can_be_completed
+PASS  test_memory.test_confidence_is_bounded
+PASS  test_memory.test_forget
+PASS  test_memory.test_memory_type_filter
+PASS  test_memory.test_remember_and_find
+PASS  test_research.test_research_questions_include_source_check
+PASS  test_research.test_research_request_keeps_task_context
+PASS  test_research.test_result_keeps_sources_and_uncertainties
+PASS  test_dialog_decision.test_high_risk_is_blocked_before_execution
+PASS  test_dialog_decision.test_medium_risk_can_be_prepared
+PASS  test_dialog_decision.test_missing_information_requires_question
+PASS  test_dialog_decision.test_research_possible_when_context_is_sufficient
+PASS  test_integration.test_correct_explicit_approval_is_accepted
+PASS  test_integration.test_sensitive_action_is_blocked_without_approval
+PASS  test_integration.test_task_can_be_evaluated
+PASS  test_integration.test_wrong_approval_is_blocked
+PASS  test_search_provider.test_mock_provider_returns_search_hit
+PASS  test_search_provider.test_search_keeps_task_identity
+PASS  test_search_integration.test_search_provider_integrates_with_project
+PASS  test_real_search_provider.test_http_provider_normalizes_result
+
+Ergebnis: 26 bestanden, 0 fehlgeschlagen
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
